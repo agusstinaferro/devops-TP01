@@ -1,0 +1,29 @@
+# TP01 - Operaciones 1
+
+## Automatización con Bash
+Script que automatiza 3 tareas de administración de sistemas Linux Ubuntu.
+
+## Tareas automatizadas
+1. **Backup con timestamp**: Copia archivos del directorio especificado.
+2. **Limpieza de archivos viejos**: Elimina backups con más de N días de antigüedad.
+3. **Reporte de salud**: Genera un informe detallado de CPU, memoria, disco y procesos.
+
+## Uso
+Ejecutar en Bash:
+```bash
+bash scripts/sistema.sh [directorio_origen] [dias_retencion]
+
+# Uso con valores por defecto
+bash scripts/sistema.sh
+
+# Especificando directorio y retención de 3 días
+bash scripts/sistema.sh /var/log 3
+
+devops-TP01/
+|--- scripts/
+  |---sistema.sh
+|---logs/
+  |---sistema.log
+� |---reporte_FECHA.txt
+|---backups/
+|---README.md
