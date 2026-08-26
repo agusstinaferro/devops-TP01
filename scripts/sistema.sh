@@ -13,6 +13,11 @@ DIR_BACKUPS="$DIR_BASE/backups"
 DIR_ORIGEN="${1:-$DIR_BASE}"
 DIAS_RETENTION="${2:-7}"
 
+if [[ ! "$DIAS_RETENTION" =~ ^[0-9]+$ ]]; then
+    echo "Error: los días de retención deben ser un número entero."
+    exit 1
+fi
+
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$DIR_LOGS/sistema.log"
 }
