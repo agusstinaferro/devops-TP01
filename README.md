@@ -1,11 +1,11 @@
 # TP01 - Operaciones 1
 
 ## Automatización con Bash
-Script que automatiza 3 tareas de administraciÃ³n de sistemas Linux Ubuntu.
+Script que automatiza 3 tareas de administración de sistemas Linux Ubuntu.
 
 ## Tareas automatizadas
 1. **Backup con timestamp**: Copia archivos del directorio especificado.
-2. **Limpieza de archivos viejos**: Elimina backups con mÃ¡s de N dÃ­as de antigÃ¼edad.
+2. **Limpieza de archivos viejos**: Elimina backups con más de N dí­as de antiguedad.
 3. **Reporte de salud**: Genera un informe detallado de CPU, memoria, disco y procesos.
 
 ## Uso
